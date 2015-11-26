@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		06963E501C05997800D8A690 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06963E4F1C05997800D8A690 /* AppDelegate.swift */; };
 		06963E531C05997800D8A690 /* DropIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06963E511C05997800D8A690 /* DropIt.xcdatamodeld */; };
-		06963E551C05997800D8A690 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06963E541C05997800D8A690 /* ViewController.swift */; };
 		06963E581C05997800D8A690 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06963E561C05997800D8A690 /* Main.storyboard */; };
 		06963E5A1C05997800D8A690 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06963E591C05997800D8A690 /* Images.xcassets */; };
 		06963E5D1C05997800D8A690 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06963E5B1C05997800D8A690 /* LaunchScreen.xib */; };
 		06963E691C05997800D8A690 /* DropItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06963E681C05997800D8A690 /* DropItTests.swift */; };
+		06963E731C0599B300D8A690 /* DropItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06963E721C0599B300D8A690 /* DropItViewController.swift */; };
+		06963E751C05A09700D8A690 /* DropItBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06963E741C05A09700D8A690 /* DropItBehavior.swift */; };
+		06963E771C06D70D00D8A690 /* BezierPathsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06963E761C06D70D00D8A690 /* BezierPathsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +33,15 @@
 		06963E4E1C05997800D8A690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06963E4F1C05997800D8A690 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06963E521C05997800D8A690 /* DropIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DropIt.xcdatamodel; sourceTree = "<group>"; };
-		06963E541C05997800D8A690 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		06963E571C05997800D8A690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06963E591C05997800D8A690 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		06963E5C1C05997800D8A690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		06963E621C05997800D8A690 /* DropItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06963E671C05997800D8A690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06963E681C05997800D8A690 /* DropItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropItTests.swift; sourceTree = "<group>"; };
+		06963E721C0599B300D8A690 /* DropItViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropItViewController.swift; sourceTree = "<group>"; };
+		06963E741C05A09700D8A690 /* DropItBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropItBehavior.swift; sourceTree = "<group>"; };
+		06963E761C06D70D00D8A690 /* BezierPathsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BezierPathsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 		06963E411C05997800D8A690 = {
 			isa = PBXGroup;
 			children = (
+				06963E761C06D70D00D8A690 /* BezierPathsView.swift */,
 				06963E4C1C05997800D8A690 /* DropIt */,
 				06963E651C05997800D8A690 /* DropItTests */,
 				06963E4B1C05997800D8A690 /* Products */,
@@ -80,8 +85,9 @@
 			isa = PBXGroup;
 			children = (
 				06963E4F1C05997800D8A690 /* AppDelegate.swift */,
-				06963E541C05997800D8A690 /* ViewController.swift */,
 				06963E561C05997800D8A690 /* Main.storyboard */,
+				06963E721C0599B300D8A690 /* DropItViewController.swift */,
+				06963E741C05A09700D8A690 /* DropItBehavior.swift */,
 				06963E591C05997800D8A690 /* Images.xcassets */,
 				06963E5B1C05997800D8A690 /* LaunchScreen.xib */,
 				06963E511C05997800D8A690 /* DropIt.xcdatamodeld */,
@@ -215,7 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06963E551C05997800D8A690 /* ViewController.swift in Sources */,
+				06963E731C0599B300D8A690 /* DropItViewController.swift in Sources */,
+				06963E771C06D70D00D8A690 /* BezierPathsView.swift in Sources */,
+				06963E751C05A09700D8A690 /* DropItBehavior.swift in Sources */,
 				06963E501C05997800D8A690 /* AppDelegate.swift in Sources */,
 				06963E531C05997800D8A690 /* DropIt.xcdatamodeld in Sources */,
 			);
